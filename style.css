@@ -1,0 +1,738 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    background: #e9edf3;
+    color: #273444;
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   RESUME CONTAINER
+===================================================== */
+
+.resume {
+    width: 900px;
+    max-width: 94%;
+    margin: 35px auto;
+    background: #ffffff;
+    box-shadow: 0 15px 45px rgba(20, 35, 55, 0.14);
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.header {
+    background: #172b4d;
+    color: white;
+    padding: 32px 42px 25px;
+    position: relative;
+}
+
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+
+.profile-image {
+    width: 105px;
+    height: 105px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+.profile-info h1 {
+    font-size: 36px;
+    letter-spacing: 3px;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+
+.profile-info h1 span {
+    color: #5cc8ff;
+}
+
+
+.profile-info h2 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 7px;
+    color: #dbeafe;
+}
+
+
+.tagline {
+    margin-top: 7px;
+    font-size: 12px;
+    color: #9edcff;
+    letter-spacing: 0.5px;
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact-info {
+    margin-top: 22px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 22px;
+
+    font-size: 11px;
+    color: #dbeafe;
+}
+
+
+.contact-info a {
+    color: #dbeafe;
+    text-decoration: none;
+}
+
+
+.contact-info a:hover {
+    color: #5cc8ff;
+}
+
+
+/* =====================================================
+   MAIN CONTENT
+===================================================== */
+
+.main-content {
+    display: grid;
+    grid-template-columns: 31% 69%;
+}
+
+
+/* =====================================================
+   LEFT COLUMN
+===================================================== */
+
+.left-column {
+    background: #f4f7fa;
+    padding: 28px 25px;
+    border-right: 1px solid #dfe5ec;
+}
+
+
+/* =====================================================
+   RIGHT COLUMN
+===================================================== */
+
+.right-column {
+    padding: 28px 32px;
+}
+
+
+/* =====================================================
+   SECTIONS
+===================================================== */
+
+.section {
+    margin-bottom: 27px;
+}
+
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+
+    color: #172b4d;
+
+    padding-bottom: 8px;
+    margin-bottom: 13px;
+
+    border-bottom: 2px solid #dfe5ec;
+}
+
+
+.section-title span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 25px;
+    height: 25px;
+
+    background: #172b4d;
+    color: white;
+
+    font-size: 9px;
+    letter-spacing: 0;
+
+    border-radius: 4px;
+}
+
+
+/* =====================================================
+   PROFILE
+===================================================== */
+
+.profile-text {
+    font-size: 11px;
+    color: #536274;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+
+/* =====================================================
+   SKILLS
+===================================================== */
+
+.skill-group {
+    margin-bottom: 14px;
+}
+
+
+.skill-group h4 {
+    font-size: 9px;
+    color: #7b8794;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+}
+
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+
+.skill-tags span {
+    background: white;
+    border: 1px solid #d8e0e8;
+    color: #34495e;
+
+    font-size: 9px;
+    padding: 5px 7px;
+
+    border-radius: 4px;
+}
+
+
+.skill-tags span:hover {
+    background: #172b4d;
+    color: white;
+}
+
+
+/* =====================================================
+   LISTS
+===================================================== */
+
+.clean-list {
+    list-style: none;
+}
+
+
+.clean-list li {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 7px;
+
+    font-size: 11px;
+    color: #536274;
+}
+
+
+.clean-list li::before {
+    content: "";
+    position: absolute;
+
+    width: 5px;
+    height: 5px;
+
+    background: #3b9ed8;
+
+    border-radius: 50%;
+
+    left: 0;
+    top: 7px;
+}
+
+
+/* =====================================================
+   LANGUAGES
+===================================================== */
+
+.language {
+    margin-bottom: 12px;
+}
+
+
+.language strong {
+    display: block;
+    font-size: 10px;
+    color: #34495e;
+}
+
+
+.language small {
+    display: block;
+    font-size: 9px;
+    color: #7b8794;
+    margin-bottom: 5px;
+}
+
+
+.language-bar {
+    width: 100%;
+    height: 4px;
+    background: #dce3ea;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.language-bar span {
+    display: block;
+    height: 100%;
+    background: #3b9ed8;
+    border-radius: 10px;
+}
+
+
+/* =====================================================
+   INTERESTS
+===================================================== */
+
+.interest-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+
+.interest-list span {
+    font-size: 9px;
+    color: #536274;
+
+    padding: 6px 8px;
+
+    background: white;
+    border: 1px solid #d8e0e8;
+
+    border-radius: 4px;
+}
+
+
+/* =====================================================
+   EDUCATION TIMELINE
+===================================================== */
+
+.timeline-item {
+    position: relative;
+    display: flex;
+    padding-left: 22px;
+    margin-bottom: 20px;
+}
+
+
+.timeline-item::before {
+    content: "";
+
+    position: absolute;
+
+    left: 4px;
+    top: 4px;
+    bottom: -20px;
+
+    width: 1px;
+
+    background: #d5dee8;
+}
+
+
+.timeline-item:last-child::before {
+    display: none;
+}
+
+
+.timeline-dot {
+    position: absolute;
+
+    left: 0;
+    top: 4px;
+
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: #3b9ed8;
+    border: 2px solid white;
+
+    box-shadow: 0 0 0 2px #3b9ed8;
+}
+
+
+.date {
+    display: inline-block;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    color: #3b9ed8;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 3px;
+}
+
+
+.timeline-content h3 {
+    font-size: 13px;
+    color: #273444;
+    margin-bottom: 1px;
+}
+
+
+.timeline-content h4 {
+    font-size: 10px;
+    font-weight: 600;
+    color: #607080;
+    margin-bottom: 3px;
+}
+
+
+.timeline-content p {
+    font-size: 10px;
+    color: #7b8794;
+}
+
+
+/* =====================================================
+   PROJECT CARDS
+===================================================== */
+
+.project-card {
+    display: flex;
+    gap: 14px;
+
+    padding: 13px;
+
+    margin-bottom: 12px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e3e9ef;
+    border-radius: 6px;
+
+    transition: 0.25s ease;
+}
+
+
+.project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(20, 35, 55, 0.08);
+}
+
+
+.project-number {
+    flex-shrink: 0;
+
+    width: 31px;
+    height: 31px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #172b4d;
+    color: white;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    border-radius: 5px;
+}
+
+
+.project-content {
+    flex: 1;
+}
+
+
+.project-content h3 {
+    font-size: 13px;
+    color: #172b4d;
+    margin-bottom: 4px;
+}
+
+
+.project-content p {
+    font-size: 10px;
+    color: #607080;
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+
+.project-content ul {
+    padding-left: 15px;
+}
+
+
+.project-content li {
+    font-size: 9px;
+    color: #607080;
+    margin-bottom: 2px;
+}
+
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+
+    margin-top: 7px;
+}
+
+
+.project-tech span {
+    font-size: 8px;
+    color: #2878a8;
+
+    background: #e7f5fc;
+
+    padding: 3px 6px;
+
+    border-radius: 3px;
+}
+
+
+/* =====================================================
+   CERTIFICATIONS
+===================================================== */
+
+.certifications {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+
+.cert {
+    padding: 9px 10px;
+
+    border-left: 3px solid #3b9ed8;
+
+    background: #f7f9fb;
+}
+
+
+.cert strong {
+    display: block;
+
+    font-size: 9px;
+    color: #34495e;
+}
+
+
+.cert span {
+    display: block;
+
+    font-size: 8px;
+    color: #7b8794;
+
+    margin-top: 2px;
+}
+
+
+/* =====================================================
+   ACHIEVEMENTS
+===================================================== */
+
+.achievement-list {
+    list-style: none;
+}
+
+
+.achievement-list li {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 10px;
+
+    padding: 7px 0;
+
+    border-bottom: 1px solid #edf0f3;
+}
+
+
+.achievement-list strong {
+    font-size: 9px;
+    color: #34495e;
+}
+
+
+.achievement-list span {
+    font-size: 9px;
+    color: #7b8794;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    padding: 0 32px 18px;
+    text-align: center;
+}
+
+
+.footer-line {
+    height: 1px;
+    background: #e1e6eb;
+    margin-bottom: 12px;
+}
+
+
+footer p {
+    font-size: 8px;
+    letter-spacing: 1.5px;
+    color: #8a96a3;
+}
+
+
+footer p span {
+    margin: 0 5px;
+    color: #3b9ed8;
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+
+@media (max-width: 750px) {
+
+    body {
+        background: white;
+    }
+
+    .resume {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        box-shadow: none;
+    }
+
+
+    .header {
+        padding: 25px 20px;
+    }
+
+
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .profile-info h1 {
+        font-size: 30px;
+    }
+
+
+    .contact-info {
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+
+
+    .left-column {
+        border-right: none;
+        border-bottom: 1px solid #dfe5ec;
+    }
+
+
+    .right-column {
+        padding: 25px 20px;
+    }
+
+
+    .certifications {
+        grid-template-columns: 1fr;
+    }
+
+
+    .achievement-list li {
+        grid-template-columns: 1fr;
+        gap: 2px;
+    }
+
+}
+
+
+/* =====================================================
+   PRINT / SINGLE PAGE
+===================================================== */
+
+@media print {
+
+    @page {
+        size: A4;
+        margin: 0;
+    }
+
+
+    body {
+        background: white;
+    }
+
+
+    .resume {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        box-shadow: none;
+    }
+
+
+    .project-card:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+}
